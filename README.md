@@ -9,6 +9,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 -[] Use AMP
 -[] Comments
 -[] Likes
+-[] Add some animation to navigation bar
 
 ## Getting Started
 

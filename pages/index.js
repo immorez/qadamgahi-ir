@@ -5,7 +5,7 @@ import Intro from '../components/Intro';
 import Layout from '../components/UI/Layout';
 import { getAllPosts } from '../lib/api';
 import Head from 'next/head';
-import Aux from '../hoc/Auxiliary/Aux';
+import Navigation from '../components/UI/Navigation/Navigation';
 
 export default function Index({ allPosts }) {
   const heroPost = allPosts[0];
@@ -18,6 +18,7 @@ export default function Index({ allPosts }) {
         </Head>
         <Container>
           <Intro />
+          <Navigation />
           {heroPost && (
             <HeroPost
               title={heroPost.title}
