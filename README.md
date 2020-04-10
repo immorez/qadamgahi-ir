@@ -2,6 +2,14 @@ My simple personal blog based on Javascript, [React](https://reactjs.org/) and [
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
+## TODO List
+
+-[] Custom 404 Page
+-[] CV at Landing page
+-[] Use AMP
+-[] Comments
+-[] Likes
+
 ## Getting Started
 
 First, run the development server:
