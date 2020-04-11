@@ -1,15 +1,21 @@
 import { useState } from 'react';
 import NavigationItems from './NavigationItems';
 import FollowMeButton from './Button';
+import FollowMenu from './FollowMenu';
 export default function Navigation() {
   const [isExpanded, toggleExpansion] = useState(false);
+  const [isFollowMenuExpanded, toggleFollowMenu] = useState(false);
 
+  let followMenu = null;
+  if (isFollowMenuExpanded) {
+    followMenu = <FollowMenu />;
+  }
   return (
     <div>
       <nav className="flex items-center justify-between flex-wrap .bg-gray-200 p-6">
         <div className="flex items-center flex-shrink-0 text-black mr-6">
-          <span className="font-semibold text-xl tracking-tight">
-            @Qadamgahiii
+          <span className="font-black font-mono px-2 py-0 text-4xl bg-black text-white text-xl tracking-tight">
+            {'<Q>'}
           </span>
         </div>
         <div className="block lg:hidden">
@@ -33,7 +39,18 @@ export default function Navigation() {
           } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
         >
           <NavigationItems />
-          <FollowMeButton />
+          <div
+            className={`${
+              isFollowMenuExpanded
+                ? 'transform -translate-x-2 inline-flex transition-transform duration-500 ease-in-out'
+                : 'transform translate-x-2 inline-flex transition-transform duration-500 ease-in-out'
+            }`}
+          >
+            <FollowMeButton
+              clicked={() => toggleFollowMenu(!isFollowMenuExpanded)}
+            />
+          </div>
+          {followMenu}
         </div>
       </nav>
     </div>
