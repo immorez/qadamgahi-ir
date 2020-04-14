@@ -4,7 +4,7 @@ import CoverImage from './CoverImage';
 import Link from 'next/link';
 const heroPost = ({ title, coverImage, date, excerpt, author, slug }) => {
   return (
-    <section>
+    <section className="block flex-col w-full">
       <div className="mb-8 md:mb-16">
         <CoverImage title={title} src={coverImage} slug={slug} />
       </div>

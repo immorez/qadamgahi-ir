@@ -5,11 +5,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## TODO List
 
 -[] Custom 404 Page
+
 -[] CV at Landing page
+
 -[] Use AMP
+
 -[] Comments
+
 -[] Likes
--[] Add some animation to navigation bar
+
+-[x] Add some animation to navigation bar
 
 ## Getting Started
 

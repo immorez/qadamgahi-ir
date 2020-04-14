@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import NavigationItems from './NavigationItems';
 import FollowMeButton from './Button';
 import FollowMenu from './FollowMenu';
@@ -8,14 +9,14 @@ export default function Navigation() {
 
   let followMenu = null;
   if (isFollowMenuExpanded) {
-    followMenu = <FollowMenu />;
+    followMenu = <FollowMenu show={isFollowMenuExpanded} />;
   }
   return (
     <div>
-      <nav className="flex items-center justify-between flex-wrap .bg-gray-200 p-6">
+      <nav className="flex items-center justify-between flex-wrap .bg-gray-200 p-6 sticky top-0">
         <div className="flex items-center flex-shrink-0 text-black mr-6">
-          <span className="font-black font-mono px-2 py-0 text-4xl bg-black text-white text-xl tracking-tight">
-            {'<Q>'}
+          <span className="font-black font-mono px-2 py-0 text-4xl bg-black text-white text-xl tracking-tight transform hover:-rotate-45 transition-transform duration-200 ease-in-out">
+            <Link href="/">{'<Q>'}</Link>
           </span>
         </div>
         <div className="block lg:hidden">
@@ -42,8 +43,8 @@ export default function Navigation() {
           <div
             className={`${
               isFollowMenuExpanded
-                ? 'transform -translate-x-2 inline-flex transition-transform duration-500 ease-in-out'
-                : 'transform translate-x-2 inline-flex transition-transform duration-500 ease-in-out'
+                ? 'transform lg:-translate-x-2 sm:mb-1 inline-flex transition-transform duration-500 ease-in-out'
+                : 'transform lg:translate-x-2 sm:mb-1 inline-flex transition-transform duration-500 ease-in-out'
             }`}
           >
             <FollowMeButton
