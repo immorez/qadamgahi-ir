@@ -23,7 +23,7 @@ const skills = () => {
           </div>
           <div className="h-full lg:w-2/3 md:w-full sm:w-full">
             <ul className="p-2 mt-2">
-              <li className="h-32 bg-gray-200 rounded-md m-2 shadow-sm hover:shadow-md hover:bg-gray-300">
+              <li className="h-32 bg-gray-200 rounded-md m-2 shadow-sm transition-shadow duration-200 hover:shadow-md hover:bg-gray-300">
                 <div className="p-2 ml-2">
                   <h3 className="text-3xl font-mono font-semibold ml-2 text-blue-800">
                     FRONT-END DEVELOPMENT
@@ -32,7 +32,7 @@ const skills = () => {
                     I know some magic spells with front-end cutting-edge
                     technologies.🔮
                   </p>
-                  <Tag tag="Pure Javascript" />
+                  <Tag tag="Javascript" />
                   <Tag tag="Typescript" />
                   <Tag tag="React" />
                   <Tag tag="HTML" />
@@ -41,7 +41,7 @@ const skills = () => {
                 </div>
               </li>
 
-              <li className="h-32 bg-gray-200 rounded-md m-2 hover:shadow-md hover:bg-gray-300">
+              <li className="h-32 bg-gray-200 rounded-md m-2 hover:shadow-md transition-shadow duration-200 hover:bg-gray-300">
                 <div className="p-2 ml-2">
                   <h3 className="text-3xl font-mono font-semibold ml-2 text-blue-800">
                     BACK-END DEVELOPMENT
@@ -55,7 +55,7 @@ const skills = () => {
                   <Tag tag="REST API" />
                 </div>
               </li>
-              <li className="h-32 bg-gray-200 rounded-md m-2 hover:shadow-md hover:bg-gray-300">
+              <li className="h-32 bg-gray-200 rounded-md m-2 hover:shadow-md transition-shadow duration-200 hover:bg-gray-300">
                 <div className="p-2 ml-2">
                   <h3 className="text-3xl font-mono font-semibold ml-2 text-blue-800">
                     DIGITAL MARKETING

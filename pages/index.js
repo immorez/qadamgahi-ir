@@ -24,20 +24,32 @@ export default function Index({ allPosts }) {
             <Interests />
             <Skills />
           </div>
-
-          <div className="block">
-            {heroPost && (
-              <HeroPost
-                title={heroPost.title}
-                coverImage={heroPost.coverImage}
-                date={heroPost.date}
-                author={heroPost.author}
-                slug={heroPost.slug}
-                excerpt={heroPost.excerpt}
-              />
+          <section className="py-2">
+            <h2 className="h2 text-gray-900 font-bold font-mono text-5xl text-center">
+              MY BLOG
+            </h2>
+            <p className="-mt-1 font-thin text-center">
+              ⌨️ Sometimes I write here for fun. ✍🏽
+            </p>
+            {!(heroPost && morePosts) && (
+              <p className="text-center text-gray-500">NO POST YET!</p>
             )}
-          </div>
-          {morePosts.length > 0 && <MorePosts posts={morePosts} />}
+            <div className="grid md:grid-cols-2 sm:grid-cols-1">
+              <div className="block">
+                {heroPost ? (
+                  <HeroPost
+                    title={heroPost.title}
+                    coverImage={heroPost.coverImage}
+                    date={heroPost.date}
+                    author={heroPost.author}
+                    slug={heroPost.slug}
+                    excerpt={heroPost.excerpt}
+                  />
+                ) : null}
+              </div>
+              {morePosts.length > 0 ? <MorePosts posts={morePosts} /> : null}
+            </div>
+          </section>
         </Container>
       </Layout>
     </>
