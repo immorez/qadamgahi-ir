@@ -13,7 +13,7 @@ const skills = () => {
           </p>
           <p className="font-mono">💖 + ☕ = {'</code>'}</p>
         </div>
-        <section className="w-auto h-full flex md:flex-shrink-0 xl:flex-row md:flex-col sm:flex-col items-center mt-3">
+        <section className="w-auto h-full flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col items-center mt-3">
           <div className="lg:w-1/3 md:w-full sm:w-full sm:w-full">
             <img
               src="assets/images/me.jpg"
@@ -21,9 +21,9 @@ const skills = () => {
             />
             <p className="italic mx-auto text-center mt-2">It's me!</p>
           </div>
-          <div className="h-full lg:w-2/3 md:w-full sm:w-full">
+          <div className="h-auto lg:w-2/3 flex flex-col md:w-full sm:w-full">
             <ul className="p-2 mt-2">
-              <li className="h-32 bg-gray-200 rounded-md m-2 shadow-sm transition-shadow duration-200 hover:shadow-md hover:bg-gray-300">
+              <li className="h-auto bg-gray-200 rounded-md m-2 shadow-sm transition-shadow duration-200 hover:shadow-md hover:bg-gray-300">
                 <div className="p-2 ml-2">
                   <h3 className="text-3xl font-mono font-semibold ml-2 text-blue-800">
                     FRONT-END DEVELOPMENT
@@ -41,7 +41,7 @@ const skills = () => {
                 </div>
               </li>
 
-              <li className="h-32 bg-gray-200 rounded-md m-2 hover:shadow-md transition-shadow duration-200 hover:bg-gray-300">
+              <li className="h-auto bg-gray-200 rounded-md m-2 hover:shadow-md transition-shadow duration-200 hover:bg-gray-300">
                 <div className="p-2 ml-2">
                   <h3 className="text-3xl font-mono font-semibold ml-2 text-blue-800">
                     BACK-END DEVELOPMENT
@@ -55,7 +55,7 @@ const skills = () => {
                   <Tag tag="REST API" />
                 </div>
               </li>
-              <li className="h-32 bg-gray-200 rounded-md m-2 hover:shadow-md transition-shadow duration-200 hover:bg-gray-300">
+              <li className="h-auto bg-gray-200 rounded-md m-2 hover:shadow-md transition-shadow duration-200 hover:bg-gray-300">
                 <div className="p-2 ml-2">
                   <h3 className="text-3xl font-mono font-semibold ml-2 text-blue-800">
                     DIGITAL MARKETING
