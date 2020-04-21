@@ -5,8 +5,8 @@ const navigationItems = () => {
     <div className="text-sm lg:flex-grow">
       <ul>
         <NavigationItem item="Home" linkTo="/" />
-        <NavigationItem item="Resume" linkTo="/resume" />
-        <NavigationItem item="About Me" linkTo="/about-me" />
+        <NavigationItem item="Resume" linkTo="/" />
+        <NavigationItem item="About Me" linkTo="/" />
       </ul>
     </div>
   );
