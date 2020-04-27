@@ -44,11 +44,8 @@ const intro = () => {
             GET STARTED
           </p>
           <div>
-            <button className="bg-green-500 hover:bg-green-700 text-white font-thin py-2 px-10 mx-auto rounded-full">
-              GET CV
-            </button>
             <button className="bg-blue-500 hover:bg-blue-700 border border-blue-500 hover:border-transparent font-thin text-white md:ml-2 sm:mx-auto py-2 px-4 rounded-full">
-              SUGGEST A JOB
+              SUGGEST ME A JOB
             </button>
           </div>
 
