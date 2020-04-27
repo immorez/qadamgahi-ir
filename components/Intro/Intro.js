@@ -44,9 +44,11 @@ const intro = () => {
             GET STARTED
           </p>
           <div>
-            <button className="bg-blue-500 hover:bg-blue-700 border border-blue-500 hover:border-transparent font-thin text-white md:ml-2 sm:mx-auto py-2 px-4 rounded-full">
-              SUGGEST ME A JOB
-            </button>
+            <a href="/suggest">
+              <button className="bg-blue-500 hover:bg-blue-700 border border-blue-500 hover:border-transparent font-thin text-white md:ml-2 sm:mx-auto py-2 px-4 rounded-full">
+                SUGGEST ME A JOB
+              </button>
+            </a>
           </div>
 
           <span className="inline-flex font-mono text-gray-600 mt-2 mx-auto">
